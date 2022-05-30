@@ -1,5 +1,14 @@
+body {
+    color: beige;
+    background: #111;
+    margin-bottom: 200px;
+}
+
+
 h1 {
     text-align: center;
+    font-size: 50px;
+    color: gold;
 }
 
 .fa {
