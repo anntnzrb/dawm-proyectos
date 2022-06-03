@@ -1,37 +1,99 @@
+/* ****************************************************************************
+ * Global
+ * ************************************************************************* */
+
 * {
-    padding: 2;
-    margin: 2;
-    font-family: 'Inconsolata', monospace;
-    font-size: 14pt;
+    --behind: linear-gradient(black, #2e2759) fixed;
+    /* colores */
+    --bg-color: #222;
+    --fg-color: beige;
+    --color-red: tomato;
 }
 
-.navbar {
-    background: #000;
-    border: 0.5px solid red;
-}
-
-.navbar a {
-    color: beige;
+em {
     font-weight: bold;
-    text-decoration: none;
-    font-size: 20pt;
 }
 
 body {
-    background: #111;
-    color: beige;
+    background: var(--behind);
+    color: var(--fg-color);
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.25rem;
+}
+
+.main-div {
+    width: 50%;
+    margin: auto;
+}
+
+section {
+    background: var(--bg-color);
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem #111;
+}
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+h2 {
+    color: gold;
+}
+
+h3 {
+    color: var(--color-red);
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
+
+/* ****************************************************************************
+ * Seccíon #1
+ * ************************************************************************* */
+
+.sec-intro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec-intro a {
+    color: red;
 }
 
 
 h1 {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--color-red);
+    color: darkgoldenrod;
     text-align: center;
-    font-size: 32pt;
-    color: gold;
+    font-size: xx-large;
 }
 
+/* ****************************************************************************
+ * Misceláneo / Otros
+ * ************************************************************************* */
+
+/* icons */
 .fa {
-  font-size: 50px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
 }
