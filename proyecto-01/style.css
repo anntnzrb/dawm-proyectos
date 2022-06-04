@@ -108,6 +108,7 @@ figcaption {
 
 .sec-aportes div {
     text-align: center;
+    justify-content: center;
 }
 
 .fa-cc-paypal {
