@@ -77,9 +77,35 @@
   <!-- ******************************************************************** -->
 
   <section class="sec-aportes" id="contacto">
-   <h2>Contacto</h2>
-  </section>
+    <h2>Contacto</h2>
+    <p>En el siguiente <i>form</i> puedes enviar algún comentario o
+      sugerencia. De hecho, si la página tiene algún error, te pido de favor que
+      me lo hagas saber para así arreglar dicho problema.</p>
+    <form class="form-contacto">
+      <div>
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="nombre" required>
+      </div>
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <legend><u>Elegir 1 de los siguientes:</u></legend>
+        <input type="radio" id="comment" name="btns">
+        <label for="comment">Comentario</label><br>
+        <input type="radio" id="report" name="btns">
+        <label for="report">Reporte</label><br>
+      </div>
+      <div>
+        <textarea rows="5" cols="100" name="description" required>
+          </textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+</section>
   </div>
 </body>
-
 </html>
