@@ -34,11 +34,28 @@ section {
     box-shadow: 0.5rem 0.5rem #111;
 }
 
+a {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inconsolata', monospace;
     text-align: center;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 0 0 0.1rem 0;
+    border-color: var(--color-red);
+    margin: 0 14rem;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 4rem;
 }
 
 h2 {
@@ -47,16 +64,6 @@ h2 {
 
 h3 {
     color: var(--color-red);
-}
-
-a {
-    color: red;
-    text-decoration: none;
-}
-
-a:hover {
-    color: orange;
-    text-decoration: underline;
 }
 
 p {
@@ -76,14 +83,20 @@ p {
     color: red;
 }
 
+/* ****************************************************************************
+ * Seccíon #2
+ * ************************************************************************* */
 
-h1 {
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: var(--color-red);
-    color: darkgoldenrod;
+.sec-aportes div {
     text-align: center;
-    font-size: xx-large;
+}
+
+.fa-cc-paypal {
+    color: whitesmoke;
+}
+
+.fa-btc {
+    color: orange;
 }
 
 /* ****************************************************************************
@@ -92,8 +105,11 @@ h1 {
 
 /* icons */
 .fa {
-    font-size: 50px;
-    width: 50px;
+    font-size: 3rem;
     text-align: center;
     text-decoration: none;
+}
+
+.fa:hover {
+    font-size: 4rem;
 }
