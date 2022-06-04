@@ -10,15 +10,15 @@
     --color-red: tomato;
 }
 
-em {
-    font-weight: bold;
-}
-
 body {
     background: var(--behind);
     color: var(--fg-color);
     font-family: 'Josefin Slab', serif;
     font-size: 1.25rem;
+}
+
+em {
+    font-weight: bold;
 }
 
 .main-div {
@@ -70,6 +70,11 @@ p {
     text-align: center;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 /* ****************************************************************************
  * Seccíon #1
  * ************************************************************************* */
@@ -79,12 +84,17 @@ p {
     justify-content: space-evenly;
 }
 
+.sec-intro img {
+    min-width: 70%;
+    width: 12rem;
+}
+
 .sec-intro a {
     color: red;
 }
 
 /* ****************************************************************************
- * Seccíon #2
+ * Seccíon Aportes
  * ************************************************************************* */
 
 .sec-aportes div {
