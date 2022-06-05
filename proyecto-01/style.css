@@ -102,6 +102,10 @@ figcaption {
     justify-content: center;
 }
 
+.exp-tags a {
+    color: orange;
+}
+
 /* ****************************************************************************
  * Seccíon Aportes
  * ************************************************************************* */
@@ -157,4 +161,30 @@ figcaption {
 /* tabla */
 table td{
     border:0.1rem solid ghostwhite;
+}
+
+.exp-tags {
+    clear: both;
+    padding: 0;
+    background: #121212;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    border: solid 0.1rem;
+    border-style: dashed;
+    list-style: none;
+}
+
+.exp-tags a {
+    display: block;
+    width: auto;
+    background: #323232;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    margin: 0.2rem;
+
+}
+
+.exp-tags li {
+    display: inline-block;
 }
