@@ -1,0 +1,19 @@
+@media (max-width: 320px) {
+    .main-div {
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .sec-intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sec-intro img {
+        max-width: 100%;
+    }
+}
