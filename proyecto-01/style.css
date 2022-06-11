@@ -5,7 +5,7 @@
 * {
     --behind: linear-gradient(black, #2e2759) fixed;
     /* colores */
-    --bg-color: #222;
+    --bg-color: #344152;
     --fg-color: beige;
     --color-red: tomato;
 }
@@ -31,7 +31,7 @@ section {
     border-radius: 2rem;
     margin: 1rem;
     padding: 1rem;
-    box-shadow: 0.5rem 0.5rem #111;
+    box-shadow: 0.5rem 0.5rem 3rem #111;
 }
 
 a {
@@ -97,11 +97,6 @@ figcaption {
  * Seccíon Experiencias
  * ************************************************************************* */
 
-.div-tabla-exp {
-    display: flex;
-    justify-content: center;
-}
-
 .exp-tags a {
     color: orange;
 }
@@ -129,6 +124,11 @@ figcaption {
 
 .form-contacto > div {
     margin: 1rem 0;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
 }
 
 .div-textarea > textarea {
@@ -156,6 +156,10 @@ figcaption {
 }
 
 .gmap_canvas iframe {
+    frameborder: 0;
+    scrolling: "no";
+    marginheight: 0;
+    marginwidth: 0;
     overflow: hidden;
     background: none !important;
     width: 100%;
@@ -163,8 +167,17 @@ figcaption {
 }
 
 /* tabla */
-table td{
-    border:0.1rem solid ghostwhite;
+table {
+    margin: auto;
+}
+
+table td {
+    text-align: center;
+    padding: 0.3rem auto;
+}
+
+.tr-header td {
+    font-weight: bold;
 }
 
 .exp-tags {
