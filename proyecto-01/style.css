@@ -118,6 +118,11 @@ figcaption {
     color: orange;
 }
 
+.div-video > iframe {
+    frameborder: 0;
+    width: 100%;
+}
+
 /* ****************************************************************************
  * Seccíon Contacto
  * ************************************************************************* */
@@ -147,7 +152,7 @@ textarea {
 }
 
 .fa:hover {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 /* mapa embebido */
