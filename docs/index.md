@@ -1,5 +1,11 @@
 # DAWM Proyectos - 2022 PAO I
 
+## Autor
+
+| Nombre                | Usuario (GH) | E-Mail (ESPOL)          |
+|:----------------------|:-------------|:------------------------|
+| Juan Antonio González | `anntnzrb`   | `juangonz@espol.edu.ec` |
+
 ## Página Oficial
 
 [https://anntnzrb.github.io/dawm-proyectos](https://anntnzrb.github.io/dawm-proyectos/)
