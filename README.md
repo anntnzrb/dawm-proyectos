@@ -12,4 +12,5 @@
 
 ## Proyectos
 
-- #1: [Proyecto 01](http://htmlpreview.github.io/?https://github.com/anntnzrb/dawm-proyectos/blob/main/proyecto-01/index.html)
+- #1: [Proyecto 01](https://anntnzrb.github.io/dawm-proyectos/proyecto-01/)
+- #2: [Proyecto 02](https://anntnzrb.github.io/dawm-proyectos/proyecto-02/public)
