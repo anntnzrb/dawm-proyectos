@@ -1,5 +1,10 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.1.4"
-  }
+  "name": "proyecto-02",
+  "version": "1.0.0",
+  "description": "Proyecto 02 Dashboard + API",
+  "scripts": {
+    "ts": "tsc -p ./src/ts/"
+  },
+  "author": "anntnzrb",
+  "license": "GPL-3.0-or-later"
 }
