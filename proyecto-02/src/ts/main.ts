@@ -21,24 +21,20 @@ const build_user_info = async () => {
         const api_user = await fetchAPI('json', `${BASE_API}/users/anntnzrb`);
 
         buildHTML("#div-repos-header",
-                  `<h4 class="mb-0">${api_user.public_repos} public repositories</h4>`);
+                  `<h4 class="mb-0">${api_user.public_repos}</h4>`);
 
         buildHTML("#div-followers-header",
                   `<h4 class="mb-0">${api_user.followers}</h4>`);
 
         const api_stars = await fetchAPI('json', `${BASE_API}/users/anntnzrb/starred`);
-        let stars_count = 0;
-        api_stars.forEach((_: any) => ++stars_count)
-
         buildHTML("#div-starred-header",
-                  `<h4 class="mb-0">${stars_count}</h4>`);
+                  `<h4 class="mb-0">${Array.from(api_stars).length}</h4>`);
 
-        let open_iss_pr_count = 0;
-        const open_iss_pr = (await fetchAPI('json',
-                                            `${BASE_API}/search/issues?per_page=100&sort=updated&q=author:anntnzrb`)).items
-                                                .filter((e: any) => e.state ===
-                                                    "open")
-                                                .forEach((e: any) => ++open_iss_pr_count);
+        const open_iss_pr_count =
+            Array.from((await fetchAPI('json',
+                                       `${BASE_API}/search/issues?per_page=100&sort=updated&q=author:anntnzrb`)).items
+                                           .filter((e: any) => e.state === "open"))
+                .length;
 
         buildHTML("#div-open-iss-pr-header",
                   `<h4 class="mb-0"> ${open_iss_pr_count}</h4>`);
@@ -52,7 +48,7 @@ const build_issue_pr_table = async () => {
     try {
         const apires = (await fetchAPI('json', `${BASE_API}/search/issues?per_page=100&sort=updated&q=author:anntnzrb`)).items;
         buildHTML("#div-table-isspr-header",
-                  `<p>${Array.from(apires).length} results</p>`)
+            `<p>${Array.from(apires).length} results</p>`)
 
         apires.forEach((e: any) => {
             const fmt = `

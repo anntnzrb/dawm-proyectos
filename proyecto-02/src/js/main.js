@@ -26,17 +26,16 @@ const buildHTML = (query, fmt) => {
 const build_user_info = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const api_user = yield fetchAPI('json', `${BASE_API}/users/anntnzrb`);
-        buildHTML("#div-repos-header", `<h4 class="mb-0">${api_user.public_repos} public repositories</h4>`);
+        buildHTML("#div-repos-header", `<h4 class="mb-0">${api_user.public_repos}</h4>`);
         buildHTML("#div-followers-header", `<h4 class="mb-0">${api_user.followers}</h4>`);
         const api_stars = yield fetchAPI('json', `${BASE_API}/users/anntnzrb/starred`);
         let stars_count = 0;
         api_stars.forEach((_) => ++stars_count);
         buildHTML("#div-starred-header", `<h4 class="mb-0">${stars_count}</h4>`);
         let open_iss_pr_count = 0;
-        const open_iss_pr = (yield fetchAPI('json', `${BASE_API}/search/issues?per_page=100&sort=updated&q=author:anntnzrb`)).items
-            .filter((e) => e.state ===
-            "open")
-            .forEach((e) => ++open_iss_pr_count);
+        (yield fetchAPI('json', `${BASE_API}/search/issues?per_page=100&sort=updated&q=author:anntnzrb`)).items
+            .filter((e) => e.state === "open")
+            .forEach((_) => ++open_iss_pr_count);
         buildHTML("#div-open-iss-pr-header", `<h4 class="mb-0"> ${open_iss_pr_count}</h4>`);
     }
     catch (err) {
