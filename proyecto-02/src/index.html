@@ -117,7 +117,7 @@
                   <i class="material-icons opacity-10">weekend</i>
                 </div>
                 <div id="div-open-iss-pr-header" class="text-end pt-1">
-                  <p class="text-sm mb-0 text-capitalize">Currenlty Open
+                  <p class="text-sm mb-0 text-capitalize">Currently Open
                     Issues & Pull Requests</p>
                 </div>
               </div>
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-lg-12 col-md-6 mt-4 mb-4">
+          <div class="col-lg-6 col-md-6 mt-4 mb-4">
             <div class="card z-index-2 ">
               <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                 <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
@@ -140,6 +140,20 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-6 col-md-6 mt-4 mb-4">
+            <div class="card z-index-2  ">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
+                  <div class="chart">
+                    <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="mb-0 ">Languages used for this project</h6>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row mb-4">
           <div class="col-lg-16 col-md-12 mb-md-2 mb-8">
@@ -148,6 +162,13 @@
                 <div class="row">
                   <div id="div-table-isspr-header" class="col-lg-6 col-7">
                     <h6>Open Issues & Pull Requests</h6>
+                  </div>
+                  <div class="col-lg-2 col-7">
+                    <select id="open_iss_pr_form" class="form-select" aria-label="Default select example">
+                      <option value="all">All</option>
+                      <option value="open">Open</option>
+                      <option value="closed">Closed</option>
+                    </select>
                   </div>
                 </div>
               </div>
