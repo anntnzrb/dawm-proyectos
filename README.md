@@ -13,4 +13,4 @@
 ## Proyectos
 
 - #1: [Proyecto 01](https://anntnzrb.github.io/dawm-proyectos/proyecto-01/)
-- #2: [Proyecto 02](https://anntnzrb.github.io/dawm-proyectos/proyecto-02/public)
+- #2: [Proyecto 02](https://anntnzrb.github.io/dawm-proyectos/proyecto-02/src/)
