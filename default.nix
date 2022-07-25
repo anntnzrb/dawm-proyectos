@@ -2,17 +2,19 @@
 
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
+    # js
     nodejs
 
     # HTML
     nodePackages.vscode-langservers-extracted
 
-    # TypeScript
+    # ts
      nodePackages.typescript nodePackages.typescript-language-server
 
-    # Python
-    python39Packages.requests
+    # misc 
+    python39Packages.requests heroku
 
+    # Angular
     nodePackages."@angular/cli"
   ];
 }
