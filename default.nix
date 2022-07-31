@@ -16,5 +16,8 @@ pkgs.mkShell {
 
     # Angular
     nodePackages."@angular/cli"
+
+    # VueJS
+    nodePackages."@vue/cli"
   ];
 }
