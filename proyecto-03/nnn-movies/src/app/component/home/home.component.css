@@ -1,0 +1,19 @@
+.moviesTop {
+    display: flex;
+    justify-content: center;
+}
+
+.navIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.mov {
+    display: flex;
+    justify-content: center;
+}
+
+.moviePic img {
+    alt: "img";
+    width: 200px;
+}
