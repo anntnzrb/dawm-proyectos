@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import {MatIconModule} from '@angular/material/icon';
+import { AccountComponent } from './component/account/account.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatIconModule} from '@angular/material/icon';
     HomeComponent,
     HeaderComponent,
     LoginComponent,
-    ProfilesComponent
+    ProfilesComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
