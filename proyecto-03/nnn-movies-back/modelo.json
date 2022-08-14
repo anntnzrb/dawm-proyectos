@@ -1,0 +1,35 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "actor_id": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "first_name": {
+                "type": "faker",
+                "value": "name.firstName"
+            },
+            "last_name": {
+                "type": "faker",
+                "value": "name.lastName"
+            },
+            "year": {
+                "type": "randomNumberBetween",
+                "value": [
+                    1950,
+                    2000
+                ]
+            },
+            "num_mov": {
+                "type": "randomNumberBetween",
+                "value": [
+                    20,
+                    80
+                ]
+            }
+        }
+    }
+}
