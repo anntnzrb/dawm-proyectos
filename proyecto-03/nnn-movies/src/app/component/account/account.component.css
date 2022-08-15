@@ -3,15 +3,6 @@
     justify-content: center;
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-}
-
-h2 {
-    text-align: center;
-}
-
 #avatar {
     width: 150px;
 }
