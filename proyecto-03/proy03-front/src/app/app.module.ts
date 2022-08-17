@@ -14,6 +14,7 @@ import { HeaderComponent } from './comp/common/header/header.component';
 import { LoginComponent } from './comp/login/login.component';
 import { ActorsComponent } from './comp/actors/actors.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './comp/common/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MovieComponent,
     HeaderComponent,
     LoginComponent,
-    ActorsComponent
+    ActorsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

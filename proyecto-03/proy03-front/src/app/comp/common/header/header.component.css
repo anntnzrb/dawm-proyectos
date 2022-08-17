@@ -10,11 +10,6 @@
     letter-spacing: 0;
 }
 
-.mat-toolbar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 a {
     text-decoration: none;
 }
