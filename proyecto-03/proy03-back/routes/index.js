@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 const sequelize = require('../models/index.js').sequelize;
-var initModels = require("../models/init-models");
-var models = initModels(sequelize);
+const initModels = require("../models/init-models");
+const models = initModels(sequelize);
 
 /* GET home page. */
 router.get('/', function (_req, res) {
@@ -35,7 +35,7 @@ router.get('/actors', (_req, res) => {
     .catch(error => res.status(400).send(error))
 });
 
-router.get('/actor/:id', (req, res) => {
+router.get('/actors/:id', (req, res) => {
   const id = req.params.id;
   models.Actor.findOne({ where: { actor_id: id } })
     .then(actor => res.json(actor))

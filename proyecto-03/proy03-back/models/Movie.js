@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    cast_members: {
+    main_actor: {
       type: DataTypes.TEXT,
       allowNull: false
     },

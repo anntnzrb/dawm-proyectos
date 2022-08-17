@@ -1,0 +1,8 @@
+.card {
+    text-align: center;
+}
+
+#movie-card {
+    margin: 0 auto;
+    color: coral;
+}

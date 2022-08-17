@@ -1,0 +1,14 @@
+* {
+    color: blue;
+}
+
+.grid {
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}

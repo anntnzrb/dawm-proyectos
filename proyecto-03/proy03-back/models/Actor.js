@@ -19,8 +19,8 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    num_mov: {
-      type: DataTypes.INTEGER,
+    country: {
+      type: DataTypes.TEXT,
       allowNull: false
     }
   }, {

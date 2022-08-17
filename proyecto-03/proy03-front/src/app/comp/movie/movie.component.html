@@ -1,3 +1,14 @@
-<h1>Synopsis: {{movie.synopsis}}</h1>
-<h1>Lenght: {{movie.lenght}}</h1>
-<h1>Cast: {{movie.cast_members}}</h1>
+<app-header></app-header>
+
+<div id="movie-card" class="card text-bg-secondary" style="width: 18rem;">
+    <img src="{{movie.artwork_url}}" alt="">
+    <div class="card-body">
+        <h4 class="card-title"> <i>{{movie.title}}</i></h4>
+        <p class="card-text">
+            {{movie.synopsis}}<br><br>
+            <b>Lenght</b>: {{movie.lenght}}m<br><br>
+            <b>Main Actor</b>: {{movie.main_actor}}<br><br>
+            <a routerLink="/home"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        </p>
+    </div>
+</div>
