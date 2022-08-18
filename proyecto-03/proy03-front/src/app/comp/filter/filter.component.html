@@ -1,0 +1,24 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="card border-success mb-3 text-bg-warning" style="max-width: 18rem;" *ngFor="let a of actors">
+        <div class="card-header bg-transparent border-success">
+            <h5>{{a.first_name}} {{a.last_name}} ({{a.year}})</h5>
+        </div>
+        <div class="card-footer bg-transparent border-success"><i>Country</i>: {{a.country}}</div>
+        <div class="card-footer bg-transparent border-success">
+            <mat-icon (click)="getMoviesByActor('Tom Hardy')" aria-hidden="false" fontIcon="movie"></mat-icon>
+        </div>
+    </div>
+</div>
+
+<button (click)="getMoviesByActor('Tom Hardy')">String???</button>
+
+<div class="movie-container">
+    <div class="card-body" *ngFor="let m of movies">
+        <img src="{{m.artwork_url}}" alt="">
+        <h2>{{m.title}} ({{m.year}})</h2>
+        <button (click)="goToMovie(m.movie_id)">View</button>
+    </div>
+</div>

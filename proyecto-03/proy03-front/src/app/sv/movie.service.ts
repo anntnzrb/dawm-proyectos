@@ -15,4 +15,12 @@ export class MovieService {
   getOne(id: string) {
     return this.http.get(`http://localhost:3000/movies/${id}`)
   }
+
+  getByYear(year: string) {
+    return this.http.get(`http://localhost:3000/movies/by-year/${year}`)
+  }
+
+  getByActor(actor: string) {
+    return this.http.get(`http://localhost:3000/movies/by-name/${actor}`)
+  }
 }
