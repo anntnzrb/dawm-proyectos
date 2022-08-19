@@ -1,13 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
 .movie-container {
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -17,5 +9,5 @@
 }
 
 .card-body {
-    padding: 1.5rem;
+    padding-top: 1.5rem;
 }

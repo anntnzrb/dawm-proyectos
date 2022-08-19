@@ -1,24 +1,32 @@
-.grid {
-    margin: 0 auto;
-    padding: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
+h2 {
     text-align: center;
-    column-gap: 20px;
 }
 
 .movie-container {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    display: flex;
     align-items: center;
     text-align: center;
-    column-gap: 20px;
 }
 
-.card-body {
-    padding: 1.5rem;
+.actor-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#actor-card {
+    cursor: grabbing;
+    min-width: 20rem;
+}
+
+.years-filter {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#btn-year {
+    margin: 0.5rem;
 }

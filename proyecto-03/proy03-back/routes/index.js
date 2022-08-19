@@ -26,6 +26,22 @@ router.get('/movies/:id', (req, res) => {
     .catch(error => res.status(400).send(error))
 });
 
+router.get('/movies/by-name/:main_actor', (req, res) => {
+  const name = req.params.main_actor;
+
+  models.Movie.findAll({ where: { main_actor: name } })
+    .then(mov => res.json(mov))
+    .catch(error => res.status(400).send(error))
+});
+
+router.get('/movies/by-year/:year', (req, res) => {
+  const year = req.params.year;
+
+  models.Movie.findAll({ where: { year: year } })
+    .then(mov => res.json(mov))
+    .catch(error => res.status(400).send(error))
+});
+
 /* ****************************************************************************
  * Actor
  * ************************************************************************* */
