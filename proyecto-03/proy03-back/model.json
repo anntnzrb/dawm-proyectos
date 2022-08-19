@@ -1,0 +1,113 @@
+{
+  "model": {
+    "type": "Object",
+    "value": {
+      "id": {
+        "type": "incrementNumber",
+        "options": {
+          "from": 1
+        }
+      },
+      "title": {
+        "type": "faker",
+        "value": "company.companyName"
+      },
+      "year": {
+        "type": "randomNumberBetween",
+        "value": [
+          1950,
+          2022
+        ]
+      },
+      "sales": {
+        "type": "Object",
+        "value": {
+          "january": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "february": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "march": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "april": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "may": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "june": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "july": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "august": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "september": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "october": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "november": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          },
+          "december": {
+            "type": "randomNumberBetween",
+            "value": [
+              100,
+              100000
+            ]
+          }
+        }
+      }
+    }
+  }
+}
