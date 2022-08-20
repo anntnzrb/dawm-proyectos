@@ -30,3 +30,8 @@ h2 {
 #btn-year {
     margin: 0.5rem;
 }
+
+.movies-related {
+    margin: 0 auto;
+    padding: 1.5rem;
+}

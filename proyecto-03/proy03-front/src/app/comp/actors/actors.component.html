@@ -3,7 +3,9 @@
 
 <div class="grid">
     <div class="card border-success mb-3 text-bg-warning" style="max-width: 18rem;" *ngFor="let a of actors">
-        <div class="card-header bg-transparent border-success"><h5>{{a.first_name}} {{a.last_name}} ({{a.year}})</h5></div>
+        <div class="card-header bg-transparent border-success">
+            <h5>{{a.first_name}} {{a.last_name}} ({{a.year}})</h5>
+        </div>
         <div class="card-footer bg-transparent border-success"><i>Country</i>: {{a.country}}</div>
     </div>
 </div>

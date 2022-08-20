@@ -23,4 +23,8 @@ export class MovieService {
   getByActor(actor: string) {
     return this.http.get(`http://localhost:3000/movies/by-name/${actor}`)
   }
+
+  getMoviesByYear(year: number) {
+    return this.http.get(`https://p03-db-default-rtdb.firebaseio.com/collection.json?orderBy=%22year%22&equalTo=${year}`)
+  }
 }

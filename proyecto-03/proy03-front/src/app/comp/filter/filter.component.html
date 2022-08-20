@@ -32,3 +32,20 @@
         <button (click)="goToMovie(m.movie_id)">View</button>
     </div>
 </div>
+
+<div class="movies-related">
+    <table class="table table-warning">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of movies_year">
+                <th scope="row">{{m.id}}</th>
+                <td>{{m.title}} ({{m.year}})</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

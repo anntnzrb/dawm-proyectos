@@ -12,3 +12,8 @@
     text-align: center;
     column-gap: 20px;
 }
+
+.actor-table {
+    margin: 0 auto;
+    padding: 1.5rem;
+}

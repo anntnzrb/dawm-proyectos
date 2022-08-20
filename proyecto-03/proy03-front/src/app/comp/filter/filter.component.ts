@@ -10,6 +10,7 @@ import { MovieService } from 'src/app/sv/movie.service';
 })
 export class FilterComponent implements OnInit {
   movies: any = [];
+  movies_year: any = [];
   movies_filtered: any = [];
   actors: any = [];
 
@@ -46,7 +47,17 @@ export class FilterComponent implements OnInit {
   getMoviesByYear(year: string) {
     this.movieService
       .getByYear(year)
-      .subscribe(data => this.movies_filtered = data);
+      .subscribe(data => {
+        this.movies_filtered = data
+
+        this.movieService.getMoviesByYear(parseInt(year))
+          .subscribe(mov => {
+            this.movies_year = [];
+            for (let m in mov) {
+              this.movies_year.push((mov as any)[m]);
+            }
+          });
+      });
   }
 
   getMoviesByActor(actor: string) {

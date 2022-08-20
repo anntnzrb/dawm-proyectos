@@ -6,3 +6,12 @@
     margin: 0 auto;
     color: coral;
 }
+
+.movies-related {
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.movies-related>h2 {
+    text-align: center;
+}

@@ -9,6 +9,7 @@ import { ActorsService } from 'src/app/sv/actors.service';
 export class ActorsComponent implements OnInit {
 
   actors: any = [];
+  actors_db: any = [];
 
   constructor(private actorService: ActorsService) { }
 

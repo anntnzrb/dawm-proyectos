@@ -13,3 +13,24 @@
         </p>
     </div>
 </div>
+
+<br><br>
+
+<div class="movies-related">
+    <h2>Sales per month of {{movie.year}} movies:</h2>
+
+    <table class="table table-warning">
+        <thead>
+            <tr>
+                <th scope="col">Month</th>
+                <th scope="col">Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of sales | keyvalue">
+                <td>{{s.key}}</td>
+                <td>{{s.value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
