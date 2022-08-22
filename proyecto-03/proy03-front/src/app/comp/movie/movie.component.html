@@ -17,19 +17,19 @@
 <br><br>
 
 <div class="movies-related">
-    <h2>Sales per month of {{movie.year}} movies:</h2>
+    <h2>Total sales of <b>{{movie.title}}</b> by country:</h2>
 
     <table class="table table-warning">
         <thead>
             <tr>
-                <th scope="col">Month</th>
+                <th scope="col">Country</th>
                 <th scope="col">Total Sales</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let s of sales | keyvalue">
-                <td>{{s.key}}</td>
-                <td>{{s.value}}</td>
+            <tr *ngFor="let c of country_sales | keyvalue">
+                <td>{{c.key}}</td>
+                <td>{{c.value}}</td>
             </tr>
         </tbody>
     </table>

@@ -2,7 +2,7 @@
 <app-navbar></app-navbar>
 
 <br>
-<h2>Filter by <b>Actor</b> & <b>Year:</b></h2>
+<h2>Filter by <b>Actor:</b></h2>
 <br>
 
 <div class="filter-div">
@@ -15,37 +15,36 @@
             <div class="card-footer bg-transparent border-success"><i>Country</i>: {{a.country}}</div>
         </div>
     </div>
-
-    <div class="years-filter">
-        <div class="btn-group" role="group" *ngFor="let y of years">
-            <button id="btn-year" (click)="getMoviesByYear(y)" type="button" class="btn btn-secondary">{{y}}</button>
-        </div>
-    </div>
 </div>
 
 <br><br>
 
 <div class="movie-container">
-    <div class="card-body" *ngFor="let m of movies_filtered">
+    <div class="card-body" *ngFor="let m of movies_filter_actor">
         <img src="{{m.artwork_url}}" alt="">
         <h2>{{m.title}} ({{m.year}})</h2>
         <button (click)="goToMovie(m.movie_id)">View</button>
     </div>
 </div>
 
-<div class="movies-related">
-    <table class="table table-warning">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let m of movies_year">
-                <th scope="row">{{m.id}}</th>
-                <td>{{m.title}} ({{m.year}})</td>
-            </tr>
-        </tbody>
-    </table>
+<br><br>
+
+<br>
+<h2>Filter by <b>Year:</b></h2>
+<br>
+
+<div class="years-filter">
+    <div class="btn-group" role="group" *ngFor="let y of years">
+        <button id="btn-year" (click)="getMoviesByYear(y)" type="button" class="btn btn-secondary">{{y}}</button>
+    </div>
+</div>
+
+<br><br>
+
+<div class="movie-container">
+    <div class="card-body" *ngFor="let m of movies_filter_year">
+        <img src="{{m.artwork_url}}" alt="">
+        <h2>{{m.title}} ({{m.year}})</h2>
+        <button (click)="goToMovie(m.movie_id)">View</button>
+    </div>
 </div>
