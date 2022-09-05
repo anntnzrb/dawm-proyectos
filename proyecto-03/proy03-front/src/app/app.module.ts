@@ -16,6 +16,7 @@ import { ActorsComponent } from './comp/actors/actors.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './comp/common/navbar/navbar.component';
 import { FilterComponent } from './comp/filter/filter.component';
+import { DocsComponent } from './comp/docs/docs.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FilterComponent } from './comp/filter/filter.component';
     LoginComponent,
     ActorsComponent,
     NavbarComponent,
-    FilterComponent
+    FilterComponent,
+    DocsComponent
   ],
   imports: [
     BrowserModule,

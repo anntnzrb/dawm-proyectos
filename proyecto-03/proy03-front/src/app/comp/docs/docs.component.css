@@ -1,0 +1,36 @@
+.title {
+    color: rgba(200, 91, 91, 1);
+    font-family: Barrio;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 0;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-docs,
+.actor-docs {
+    width: 40rem;
+    margin: auto;
+}
+
+.movie-docs h4 {
+    font-weight: bolder;
+    color: aquamarine;
+}
+
+.actor-docs h4 {
+    font-weight: bolder;
+    color: aquamarine;
+}
